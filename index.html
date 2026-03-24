@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>     Shouvik Chand    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="tailwind.config.js"></script>
+       
+</head>
+<body class="min-h-screen bg-dark text-zinc-100 selection:bg-cyan-500/30 selection:text-cyan-200 font-sans overflow-x-hidden pb-32">
+
+    <div class="fixed inset-0 z-0 pointer-events-none">
+        <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-violet-600/10 blur-[120px] animate-breathe"></div>
+        <div class="absolute bottom-[10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-cyan-600/10 blur-[120px] animate-breathe-delayed"></div>
+        <div class="absolute top-[60%] left-[60%] w-[30%] h-[30%] rounded-full bg-yellow-600/5 blur-[100px] animate-breathe"></div>
+        
+        <div class="absolute inset-0 opacity-[0.06] mix-blend-overlay bg-noise"></div>
+
+        <div class="meteor-container absolute inset-0 overflow-hidden">
+            <div class="meteor cyan"></div><div class="meteor"></div><div class="meteor violet"></div>
+            <div class="meteor"></div><div class="meteor cyan"></div><div class="meteor"></div>
+            <div class="meteor violet"></div><div class="meteor cyan"></div><div class="meteor"></div>
+            <div class="meteor violet"></div><div class="meteor"></div><div class="meteor cyan"></div>
+            <div class="meteor"></div><div class="meteor violet"></div>
+        </div>
+    </div>
+
+    <div class="fixed bottom-6 inset-x-0 z-50 hidden md:flex justify-center px-4 animate-fade-in-up delay-400">
+        <div id="nav-container" class="inline-flex max-w-[95vw] items-center justify-start sm:justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 bg-white/5 backdrop-blur-2xl border border-white/10 shadow-[inset_0_0_20px_rgba(255,255,255,0.05),0_10px_40px_rgba(0,0,0,0.5)] rounded-full overflow-x-auto no-scrollbar touch-pan-x">
+            <button data-target="architect" class="nav-btn active-nav flex-shrink-0 px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-medium tracking-widest uppercase transition-all duration-300 active:scale-90 bg-cyan-400/20 text-cyan-300 shadow-[inset_0_0_10px_rgba(0,232,255,0.3)]">Home</button>
+            <button data-target="about" class="nav-btn flex-shrink-0 px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-medium tracking-widest uppercase transition-all duration-300 active:scale-90 text-zinc-400 hover:text-white hover:bg-white/5">About</button>
+            <button data-target="projects" class="nav-btn flex-shrink-0 px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-medium tracking-widest uppercase transition-all duration-300 active:scale-90 text-zinc-400 hover:text-white hover:bg-white/5">Projects</button>
+            <button data-target="education" class="nav-btn flex-shrink-0 px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-medium tracking-widest uppercase transition-all duration-300 active:scale-90 text-zinc-400 hover:text-white hover:bg-white/5">Education</button>
+             <button data-target="taxonomy" class="nav-btn flex-shrink-0 px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-medium tracking-widest uppercase transition-all duration-300 active:scale-90 text-zinc-400 hover:text-white hover:bg-white/5">Skills</button>
+            <button data-target="contact" class="nav-btn flex-shrink-0 px-4 py-2 sm:py-2.5 rounded-full text-[10px] sm:text-xs font-medium tracking-widest uppercase transition-all duration-300 active:scale-90 text-zinc-400 hover:text-white hover:bg-white/5">Contact</button>
+        </div>
+    </div>
+
+    <main class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24 sm:space-y-32 lg:space-y-48">
+        
+        <section id="architect" class="min-h-[90vh] flex flex-col items-center justify-center text-center pt-20 pb-32">
+            <div class="animate-fade-in-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] backdrop-blur-md text-zinc-300 text-[10px] md:text-xs font-medium tracking-widest uppercase mb-8 shadow-xl">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                Available for Collaboration
+            </div>
+            
+            <h1 class="animate-fade-in-up delay-100 px-2 text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-serif tracking-tighter leading-[0.95] md:leading-[0.85] text-transparent bg-clip-text bg-gradient-to-br from-white via-zinc-300 to-zinc-600 mb-6">
+                Welcome to my<br />
+                <span class="font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-violet-400 to-violet-600">
+                    Website
+                </span>
+            </h1>
+            
+            <p class="animate-fade-in-up delay-200 max-w-2xl px-4 text-zinc-400 text-sm sm:text-base md:text-lg leading-relaxed mt-4 sm:mt-6">
+                Translating ideas into robust, scalable web applications. Operating at the intersection of modern MERN stack development and emerging Agentic AI technologies.
+            </p>
+
+            <div class="animate-fade-in-up delay-300 mt-10 sm:mt-12 flex items-center justify-center gap-4">
+                <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})" class="px-6 py-3 sm:px-8 sm:py-4 rounded-full bg-white text-black text-sm sm:text-base font-semibold tracking-wide hover:scale-105 active:scale-95 transition-all shadow-[0_0_40px_rgba(255,255,255,0.2)]">
+                    Explore Projects
+                </button>
+            </div>
+        </section>
+
+        <section id="about" class="pt-12 scroll-mt-24">
+            <div class="mb-10 sm:mb-12 scroll-reveal text-center md:text-left">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-4">The Developer</h2>
+                <p class="text-zinc-400 max-w-md mx-auto md:mx-0 text-sm">Bridging the gap between modern web interfaces and powerful backend architectures.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
+                <div class="bento-card glow-violet lg:col-span-1 flex flex-col justify-end min-h-[300px] sm:min-h-[350px] lg:min-h-[300px] group relative scroll-reveal transition-delay-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10"></div>
+                    <img src="profile.jpg" alt="Shouvik Chand" class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700 ease-out grayscale group-hover:grayscale-0">
+                    <div class="relative z-20 space-y-2">
+                        <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-violet-500/20 border border-violet-500/30 text-[10px] text-violet-300 uppercase tracking-widest font-bold backdrop-blur-md">
+                            <i data-lucide="terminal" class="w-6 h-6 text-emerald-400"></i> BCA Student
+                        </div>
+                        <h3 class="text-2xl font-serif text-white">Shouvik Chand</h3>
+                        <p class="text-xs text-zinc-300">Full-Stack Web Developer</p>
+                    </div>
+                </div>
+
+                <div class="bento-card glow-cyan lg:col-span-2 space-y-6 flex flex-col justify-center scroll-reveal transition-delay-200">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10">
+                        <i data-lucide="code" class="w-8 h-8 text-cyan-400/30 mb-4"></i>
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-medium text-white mb-4 leading-relaxed">
+                            "Building scalable digital experiences by combining modern JavaScript frameworks with emerging AI technologies."
+                        </h3>
+                        <div class="space-y-4 text-xs sm:text-sm text-zinc-400 leading-relaxed">
+                            <p>I am a passionate Full-Stack Developer currently pursuing my BCA. I specialize in the MERN stack (MongoDB, Express, React, Node.js) and enjoy crafting responsive, user-centric web applications from the ground up.</p>
+                            <p>Beyond traditional web development, I am actively exploring the integration of AI into web ecosystems, working with tools like LangChain.js, Hugging Face, and Ollama to build smarter, more capable applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="pt-12 scroll-mt-24">
+            <div class="mb-10 sm:mb-12 flex flex-col md:flex-row items-center md:items-start justify-between scroll-reveal text-center md:text-left">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-4">Deployed Projects</h2>
+                    <p class="text-zinc-400 max-w-md mx-auto md:mx-0 text-sm">Selected works demonstrating full-stack architecture and frontend polish.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 auto-rows-[minmax(200px,auto)]">
+                
+                <div class="bento-card glow-cyan md:col-span-2 lg:row-span-2 flex flex-col justify-between group scroll-reveal transition-delay-100">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 flex justify-between items-start mb-6 lg:mb-8">
+                        <div class="flex items-center gap-3">
+                            <div class="p-3 bg-cyan-500/10 rounded-xl border border-cyan-500/20">
+                                <i data-lucide="network" class="w-5 h-5 sm:w-6 sm:h-6 text-cyan-400"></i>
+                            </div>
+                            <h3 class="text-xl sm:text-2xl font-medium">MERN Stack Platform</h3>
+                        </div>
+                        <button class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 flex items-center justify-center transition-all group-hover:bg-cyan-500 group-hover:text-black shrink-0">
+                            <i data-lucide="arrow-up-right" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        </button>
+                    </div>
+ 
+
+                    <div class="relative z-10 space-y-6">
+                        <div>
+                            <span class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold mb-1 block">Architecture</span>
+                            <p class="text-xs sm:text-sm text-zinc-300">A full-stack application leveraging React for a dynamic UI and Node/Express for secure API routing and state management.</p>
+                        </div>
+                        <div>
+                            <span class="text-[10px] text-cyan-500 uppercase tracking-widest font-bold mb-1 block">Database</span>
+                            <p class="text-xs sm:text-sm text-zinc-300">Data persistence handled securely through MongoDB, ensuring scalable read/write operations for user management.</p>
+                        </div>
+                        <div class="p-3 sm:p-4 bg-black/40 rounded-xl border border-white/5 border-l-2 border-l-cyan-400">
+                            <span class="text-[10px] text-white uppercase tracking-widest font-bold mb-1 block">Tech Stack</span>
+                            <div class="flex flex-wrap gap-2 mt-2">
+                                <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-zinc-300">React</span>
+                                <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-zinc-300">Node.js</span>
+                                <span class="px-2 py-1 bg-white/5 border border-white/10 rounded text-[10px] text-zinc-300">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card glow-violet md:col-span-2 group scroll-reveal transition-delay-200">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 flex justify-between items-center h-full">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-2 mb-1">
+                                <i data-lucide="bot" class="w-4 h-4 text-violet-400"></i>
+                                <span class="text-[10px] sm:text-xs text-violet-400 uppercase tracking-widest">AI Integration</span>
+                            </div>
+                            <h3 class="text-lg sm:text-xl md:text-2xl font-medium text-white">LangChain LLM Interface</h3>
+                            <div class="flex flex-wrap items-center gap-4 sm:gap-6 mt-4">
+                                <div class="flex flex-col">
+                                    <span class="text-[10px] text-zinc-500 uppercase">Engine</span>
+                                    <span class="text-xs sm:text-sm text-zinc-300">Hugging Face / Ollama</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden sm:flex w-16 h-16 sm:w-20 sm:h-20 shrink-0 rounded-2xl bg-violet-500/20 border border-violet-500/30 items-center justify-center rotate-3 group-hover:rotate-12 transition-all duration-300 animate-float">
+                            <i data-lucide="cpu" class="w-8 h-8 sm:w-10 sm:h-10 text-violet-300"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bento-card glow-gold md:col-span-2 !bg-[#1A1814] !border-[#D9B648]/20 flex flex-col justify-center relative group scroll-reveal transition-delay-300">
+                    <div class="absolute right-[-10%] top-[-50%] w-64 h-64 bg-[#D9B648] opacity-[0.03] rounded-full blur-3xl group-hover:opacity-[0.08] transition-opacity duration-700"></div>
+                    <div class="relative z-10">
+                        <span class="text-[10px] text-[#D9B648] uppercase tracking-widest font-bold mb-2 block">Frontend Explorations</span>
+                        <h3 class="text-2xl sm:text-3xl font-serif text-white mb-2 italic">Responsive UI Design</h3>
+                        <p class="text-xs sm:text-sm text-zinc-400 max-w-sm">
+                            Translating design concepts into highly performant web experiences using modern CSS frameworks and vanilla JavaScript.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education" class="pt-12 scroll-mt-24">
+            <div class="mb-10 sm:mb-12 scroll-reveal text-center md:text-left">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-4">Education Journey</h2>
+                <p class="text-zinc-400 max-w-md mx-auto md:mx-0 text-sm">My academic foundation and ongoing technical studies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
+                <div class="bento-card glow-emerald md:col-span-1 space-y-4 sm:space-y-6 scroll-reveal transition-delay-100">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 flex items-start justify-between">
+                        <div class="p-3 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                            <i data-lucide="graduation-cap" class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400"></i>
+                        </div>
+                        <span class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">Present</span>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-lg sm:text-xl font-medium text-white mb-1">BCA (Bachelor of Computer Applications)</h3>
+                        <p class="text-xs sm:text-sm text-emerald-400 mb-2">Dr. BC Roy Academy of Professional Courses, Durgapur</p>
+                        <p class="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-widest">MAKAUT University</p>
+                    </div>
+                </div>
+
+                <div class="bento-card glow-emerald md:col-span-1 space-y-4 sm:space-y-6 scroll-reveal transition-delay-200">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 flex items-start justify-between">
+                        <div class="p-3 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                            <i data-lucide="book-open" class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400"></i>
+                        </div>
+                        <span class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">2022 — 2023</span>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-lg sm:text-xl font-medium text-white mb-1">Higher Secondary Examination</h3>
+                        <p class="text-xs sm:text-sm text-emerald-400 mb-2">Bikrampur R. D. High School</p>
+                        <p class="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-widest">WBCHSE Board</p>
+                    </div>
+                </div>
+
+                <div class="bento-card glow-emerald md:col-span-1 space-y-4 sm:space-y-6 scroll-reveal transition-delay-300">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 flex items-start justify-between">
+                        <div class="p-3 bg-emerald-500/10 rounded-xl border border-emerald-500/20">
+                            <i data-lucide="book" class="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400"></i>
+                        </div>
+                        <span class="text-[10px] text-zinc-500 uppercase tracking-widest font-bold">2020 — 2021</span>
+                    </div>
+                    <div class="relative z-10">
+                        <h3 class="text-lg sm:text-xl font-medium text-white mb-1">Secondary Examination</h3>
+                        <p class="text-xs sm:text-sm text-emerald-400 mb-2">New Integrated Govt. School, Simlapal</p>
+                        <p class="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-widest">WBBSE Board</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="taxonomy" class="pt-12 scroll-mt-24">
+            <div class="mb-10 sm:mb-12 scroll-reveal text-center md:text-left">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-4">Technical Arsenal</h2>
+                <p class="text-zinc-400 max-w-md mx-auto md:mx-0 text-sm">A categorized overview of the technologies and tools I work with.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
+                
+                <div class="bento-card glow-emerald lg:col-span-1 flex flex-col items-center justify-center text-center group h-full py-10 sm:py-12 scroll-reveal transition-delay-100">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 w-20 h-20 sm:w-24 sm:h-24 mb-6 rounded-full bg-gradient-to-br from-emerald-500/20 to-cyan-500/20 border border-white/10 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-emerald-500/20 mix-blend-overlay"></div>
+                        <i data-lucide="layout-template" class="w-6 h-6 sm:w-8 sm:h-8 text-white z-10"></i>
+                    </div>
+                    <h3 class="relative z-10 text-lg sm:text-xl font-medium mb-2">Full-Stack Capability</h3>
+                    <p class="relative z-10 text-xs sm:text-sm text-zinc-400 max-w-[200px] mb-6">Equipped to handle both client-side interfaces and server-side logic.</p>
+                </div>
+
+                <div class="bento-card glow-cyan lg:col-span-2 space-y-6 sm:space-y-8 scroll-reveal transition-delay-200">
+                    <div class="bento-card-gradient"></div>
+                    <div class="relative z-10 flex items-center justify-center md:justify-start gap-2 mb-4 sm:mb-6 border-b border-white/10 pb-4">
+                        <i data-lucide="layers" class="w-4 h-4 sm:w-5 sm:h-5 text-cyan-400"></i>
+                        <h3 class="text-base sm:text-lg font-medium uppercase tracking-widest text-zinc-200">Technologies & Tools</h3>
+                    </div>
+                    
+                    <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+                        <div>
+                            <span class="text-[10px] sm:text-xs text-zinc-500 uppercase tracking-widest font-bold block mb-3 text-center sm:text-left">Frontend</span>
+                            <div class="flex flex-wrap justify-center sm:justify-start gap-2">
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-white/5 border border-white/10 rounded-lg text-[10px] sm:text-xs text-zinc-200 shadow-sm">React.js</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-white/5 border border-white/10 rounded-lg text-[10px] sm:text-xs text-zinc-200 shadow-sm">JavaScript</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-white/5 border border-white/10 rounded-lg text-[10px] sm:text-xs text-zinc-200 shadow-sm">HTML5</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-white/5 border border-white/10 rounded-lg text-[10px] sm:text-xs text-zinc-200 shadow-sm">CSS3</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="text-[10px] sm:text-xs text-violet-500 uppercase tracking-widest font-bold block mb-3 text-center sm:text-left">Backend & Database</span>
+                            <div class="flex flex-wrap justify-center sm:justify-start gap-2">
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-violet-500/10 border border-violet-500/20 rounded-lg text-[10px] sm:text-xs text-violet-200">Node.js</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-violet-500/10 border border-violet-500/20 rounded-lg text-[10px] sm:text-xs text-violet-200">Express.js</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-violet-500/10 border border-violet-500/20 rounded-lg text-[10px] sm:text-xs text-violet-200">MongoDB</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-violet-500/10 border border-violet-500/20 rounded-lg text-[10px] sm:text-xs text-violet-200">SQL</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-[10px] sm:text-xs text-cyan-500 uppercase tracking-widest font-bold block mb-3 text-center sm:text-left">AI Integration</span>
+                            <div class="flex flex-wrap justify-center sm:justify-start gap-2">
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-lg text-[10px] sm:text-xs text-cyan-200">LangChain.js</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-lg text-[10px] sm:text-xs text-cyan-200">Hugging Face</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-cyan-500/10 border border-cyan-500/20 rounded-lg text-[10px] sm:text-xs text-cyan-200">Ollama</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-[10px] sm:text-xs text-yellow-500 uppercase tracking-widest font-bold block mb-3 text-center sm:text-left">Tools & Deployment</span>
+                            <div class="flex flex-wrap justify-center sm:justify-start gap-2">
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-lg text-[10px] sm:text-xs text-yellow-200">Git & GitHub</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-lg text-[10px] sm:text-xs text-yellow-200">Vercel</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-lg text-[10px] sm:text-xs text-yellow-200">Render</span>
+                                <span class="px-2.5 sm:px-3 py-1 sm:py-1.5 bg-yellow-500/10 border border-yellow-500/20 rounded-lg text-[10px] sm:text-xs text-yellow-200">GitHub Pages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pt-12 scroll-mt-24">
+            <div class="mb-10 sm:mb-12 scroll-reveal text-center md:text-left">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-serif text-white mb-4">Initiate Contact</h2>
+                <p class="text-zinc-400 max-w-md mx-auto md:mx-0 text-sm">Open for web development opportunities and complex architectural consulting.</p>
+            </div>
+
+            <div class="bento-card glow-cyan flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 py-8 sm:py-10 md:py-14 scroll-reveal text-center md:text-left transition-delay-100">
+                <div class="bento-card-gradient"></div>
+                
+                <div class="relative z-10 flex-1 flex flex-col items-center md:items-start space-y-4 sm:space-y-6">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl font-serif text-white">Let's build the future.</h3>
+                    <p class="text-zinc-400 text-sm max-w-md leading-relaxed">Reach out to discuss potential collaborations, freelance projects, or full-time opportunities.</p>
+                    
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=rajchand358@gmail.com" class="inline-flex items-center gap-2 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 text-sm sm:text-base rounded-full bg-white text-black font-semibold tracking-wide hover:scale-105 active:scale-95 transition-all shadow-[0_0_20px_rgba(255,255,255,0.2)] mt-2 md:mt-4">
+                        <i data-lucide="mail" class="w-4 h-4 sm:w-5 sm:h-5"></i>
+                        Get In Touch
+                    </a>
+                </div>
+
+                <div class="relative z-10 w-full md:w-auto md:border-l border-white/10 md:pl-10 flex flex-col items-center md:items-start justify-center mt-6 md:mt-0 pt-6 md:pt-0 border-t md:border-t-0">
+                    <p class="text-[10px] text-zinc-500 uppercase tracking-[0.3em] font-bold mb-4 sm:mb-6">
+                        Social Network
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 sm:gap-4">
+                        <a href="https://github.com/torship" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 hover:bg-white/10 hover:text-cyan-400 hover:border-cyan-400/50 transition-all active:scale-95 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shouvik-chand/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 hover:bg-white/10 hover:text-cyan-400 hover:border-cyan-400/50 transition-all active:scale-95 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/raj.chand.684892" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 hover:bg-white/10 hover:text-cyan-400 hover:border-cyan-400/50 transition-all active:scale-95 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/shouvikchand/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 hover:bg-white/10 hover:text-cyan-400 hover:border-cyan-400/50 transition-all active:scale-95 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/_shouvik_chand" target="_blank" rel="noopener noreferrer" aria-label="X" class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-zinc-300 hover:bg-white/10 hover:text-cyan-400 hover:border-cyan-400/50 transition-all active:scale-95 group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 sm:w-5 sm:h-5 group-hover:scale-110 transition-transform">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+     
+    
+    <div class="cursor" id="custom-cursor"></div>
+    <div class="cursor-trail" id="cursor-trail"></div>
+    
+     <script src="main.js"></script>
+    
+
+</body>
+</html>
